@@ -2,6 +2,9 @@
 """ Console Module """
 import cmd
 import sys
+import json
+import shlex
+import models
 from models.base_model import BaseModel
 from models.__init__ import storage
 from models.user import User
@@ -149,9 +152,7 @@ class HBNBCommand(cmd.Cmd):
          storage.save()
          print(new_instance.id)
          storage.save()
-
     def help_create(self):
-        
 
         """ Help information for the create method """
         print("Creates a class of any type")
