@@ -19,10 +19,10 @@ class User(BaseModel, Base):
         places (sqlalchemy relationship): The User-Place relationship.
         reviews (sqlalchemy relationship): The User-Review relationship.
     """
-    __tablename__ = "users"
+    __tablename__ = 'users'
     email = Column(String(128), nullable=False)
     password = Column(String(128), nullable=False)
-    first_name = Column(String(128))
-    last_name = Column(String(128))
-    places = relationship("Place", backref="user", cascade="delete")
-    reviews = relationship("Review", backref="user", cascade="delete")
+    first_name = Column(String(128), nullable=True)
+    last_name = Column(String(128), nullable=True)
+    places = relationship('Place', backref='user', cascade='all, delete, delete-orphan')
+    reviews = relationship('Review', backref='user', cascade='all, delete, delete-orphan')
