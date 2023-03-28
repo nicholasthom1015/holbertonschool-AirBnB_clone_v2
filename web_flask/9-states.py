@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 """Starts a Flask web application.
 The application listens on 0.0.0.0, port 5000.
 Routes:
@@ -39,7 +38,7 @@ def teardown(exc):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
-=======
+
 """
 script starts Flask web app
     listen on 0.0.0.0, port 5000
@@ -61,4 +60,3 @@ app = Flask(__name__)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
->>>>>>> 87a1b25e8b4861b6c3172d50ce8f3d7e47711f1a
