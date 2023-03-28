@@ -3,6 +3,7 @@
   <HEAD>
     <TITLE>HBNB</TITLE>
   </HEAD>
+<<<<<<< HEAD
 
   <BODY>
     <H1>States</H1>
@@ -13,3 +14,14 @@
     </UL>
   </BODY>
 </HTML>
+=======
+  <BODY>
+    <H1>States</H1>
+    <UL>
+      {% for state in states.values()|sort(attribute="name") %}
+      <LI>{{ state.id }}: <B>{{ state.name }}</B></LI>
+      {% endfor %}
+    </UL>
+  </BODY>
+</HTML>
+>>>>>>> 87a1b25e8b4861b6c3172d50ce8f3d7e47711f1a

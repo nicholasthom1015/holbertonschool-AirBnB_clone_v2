@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 """Starts a Flask web application.
 The application listens on 0.0.0.0, port 5000.
 Routes:
@@ -28,3 +29,28 @@ def teardown(exc):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
+=======
+"""
+script starts Flask web app
+    listen on 0.0.0.0, port 5000
+    routes: /:                    display "Hello HBNB!"
+            /hbnb:                display "HBNB"
+            /c/<text>:            display "C" + text (replace "_" with " ")
+            /python/<text>:       display "Python" + text (default="is cool")
+            /number/<n>:          display "n is a number" only if int
+            /number_template/<n>: display HTML page only if n is int
+            /number_odd_or_even/<n>: display HTML page; display odd/even info
+            /states_list & /states:  display HTML and state info from storage
+            /cities_by_states:    display HTML and state, city relations
+            /states/<id>:         display HTML and state, city given state id
+            /hbnb_filters:        display a HTML page like 6-index.html
+"""
+from models import storage
+from flask import Flask, render_template
+app = Flask(__name__)
+
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
+>>>>>>> 87a1b25e8b4861b6c3172d50ce8f3d7e47711f1a
