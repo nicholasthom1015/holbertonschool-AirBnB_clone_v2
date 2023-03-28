@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
 """Starts a Flask web application.
 The application listens on 0.0.0.0, port 5000.
@@ -18,7 +17,6 @@ def hello_hbnb():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
-=======
 #!/usr/bin/python3
 """
 script starts Flask web app
@@ -38,4 +36,3 @@ def hello_hbnb():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
->>>>>>> 87a1b25e8b4861b6c3172d50ce8f3d7e47711f1a
