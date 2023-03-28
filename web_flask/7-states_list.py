@@ -12,10 +12,9 @@ script starts Flask web app
             /states_list:         display HTML and state info from storage;
 """
 from models import storage
-from models import *
+from models import request
 from flask import Flask, render_template
 app = Flask(__name__)
-app.url_map.strict_slashes = False
 
 
 @app.route('/states_list/', strict_slashes=False)
